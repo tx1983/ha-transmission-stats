@@ -1,0 +1,16 @@
+{
+  "domain": "transmission_stats",
+  "name": "Transmission Stats",
+  "codeowners": [
+    "@tx1983"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/tx1983/ha-transmission-stats",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/tx1983/ha-transmission-stats/issues",
+  "requirements": [
+    "transmission-rpc==7.0.11"
+  ],
+  "version": "0.1.0"
+}
