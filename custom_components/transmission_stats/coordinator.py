@@ -18,8 +18,6 @@ from .const import DEFAULT_SCAN_INTERVAL, DOMAIN, EVENT_TORRENT_COMPLETED
 
 _LOGGER = logging.getLogger(__name__)
 
-TORRENT_FIELDS = ["id", "name", "status", "percent_done", "hash_string", "total_size", "download_dir"]
-
 
 @dataclass
 class TransmissionData:
@@ -59,7 +57,7 @@ class TransmissionCoordinator(DataUpdateCoordinator[TransmissionData]):
         if self._client is None:
             self._client = create_client(self.config_entry.data)
         stats = self._client.session_stats()
-        torrents = self._client.get_torrents(arguments=TORRENT_FIELDS)
+        torrents = self._client.get_torrents()
         snapshot = {
             t.id: {
                 "id": t.id,
