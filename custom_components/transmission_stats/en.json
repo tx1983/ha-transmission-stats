@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Transmission",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid username or password"
+    },
+    "abort": {
+      "already_configured": "This server is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "download_speed": { "name": "Download speed" },
+      "upload_speed": { "name": "Upload speed" },
+      "active_torrents": { "name": "Active torrents" },
+      "paused_torrents": { "name": "Paused torrents" },
+      "total_torrents": { "name": "Total torrents" },
+      "downloading": { "name": "Downloading" },
+      "seeding": { "name": "Seeding" }
+    }
+  }
+}

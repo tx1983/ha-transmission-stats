@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Подключение к Transmission",
+        "data": {
+          "host": "Хост",
+          "port": "Порт",
+          "username": "Логин",
+          "password": "Пароль"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться",
+      "invalid_auth": "Неверный логин или пароль"
+    },
+    "abort": {
+      "already_configured": "Этот сервер уже добавлен"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "download_speed": { "name": "Скорость загрузки" },
+      "upload_speed": { "name": "Скорость отдачи" },
+      "active_torrents": { "name": "Активные торренты" },
+      "paused_torrents": { "name": "Торренты на паузе" },
+      "total_torrents": { "name": "Всего торрентов" },
+      "downloading": { "name": "Скачиваются" },
+      "seeding": { "name": "Раздаются" }
+    }
+  }
+}

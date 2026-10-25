@@ -29,6 +29,7 @@ SENSORS: tuple[TransmissionSensorDescription, ...] = (
     TransmissionSensorDescription(
         key="download_speed",
         translation_key="download_speed",
+        name="Download speed",
         device_class=SensorDeviceClass.DATA_RATE,
         native_unit_of_measurement=UnitOfDataRate.BYTES_PER_SECOND,
         suggested_unit_of_measurement=UnitOfDataRate.MEGABYTES_PER_SECOND,
@@ -39,6 +40,7 @@ SENSORS: tuple[TransmissionSensorDescription, ...] = (
     TransmissionSensorDescription(
         key="upload_speed",
         translation_key="upload_speed",
+        name="Upload speed",
         device_class=SensorDeviceClass.DATA_RATE,
         native_unit_of_measurement=UnitOfDataRate.BYTES_PER_SECOND,
         suggested_unit_of_measurement=UnitOfDataRate.MEGABYTES_PER_SECOND,
@@ -49,30 +51,35 @@ SENSORS: tuple[TransmissionSensorDescription, ...] = (
     TransmissionSensorDescription(
         key="active_torrents",
         translation_key="active_torrents",
+        name="Active torrents",
         state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda d: d.active_torrents,
     ),
     TransmissionSensorDescription(
         key="paused_torrents",
         translation_key="paused_torrents",
+        name="Paused torrents",
         state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda d: d.paused_torrents,
     ),
     TransmissionSensorDescription(
         key="total_torrents",
         translation_key="total_torrents",
+        name="Total torrents",
         state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda d: d.total_torrents,
     ),
     TransmissionSensorDescription(
         key="downloading",
         translation_key="downloading",
+        name="Downloading",
         state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda d: d.downloading,
     ),
     TransmissionSensorDescription(
         key="seeding",
         translation_key="seeding",
+        name="Seeding",
         state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda d: d.seeding,
     ),
