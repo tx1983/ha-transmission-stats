@@ -87,3 +87,7 @@ Replace `notify.mobile_app_your_phone` with any notify service you use. You can 
 - **Sensors have generic names:** make sure the `translations` folder is present in `custom_components/transmission_stats/`, then restart Home Assistant.
 
 For other problems, check the Home Assistant logs and open an issue in this repository.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
